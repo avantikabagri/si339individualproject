@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'GA_MEASUREMENT_ID');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/html5reset.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+
+<body>
+	<div class="skip"><a href="#main_contact">Jump to Content</a></div>
+	<nav>
+		<ul>
+			<li> <a href="about.html"> About </a> </li>
+			<li> <a href="travel.html"> Travel </a> </li>
+			<li> <a href="quotes.html"> Quotes </a> </li>
+			<li> <a href="contact.html" class='current'> Contact </a> </li>
+		</ul>
+	</nav>
+
+<header class = "parallax">
+	<h2 class="hit-floor"> Avantika's Travels </h2>
+	<h1> Contact Me </h1>
+</header>
+
+<main id = "main_contact">
+
+<div id = "contacting_images">
+	<img src = "images/delta.png" class = "photos" alt = "delta">
+	<img src = "images/airindia.png" class = "photos" alt = "airindia">
+	<img src = "images/spirit.png" class = "photos" alt = "spirit">
+	<img src = "images/emirates.png" class = "photos" alt = "emarites">
+	<img src = "images/united.png" class = "photos" alt = "united">
+</div>
+
+<div id = "contacting_text">
+	<p> Planning a vacation soon? Feel free to fill out the form for location recommendations or a list
+		of things to do on your vacation. I'm happy to answer any other questions as well. </p>
+</div>
+
+<div id = "contacting_form">
+	<form action = "https://formspree.io/mpzldkbe" method = "POST" >
+		<div id = "contact">
+			<label for = "name"> Full Name: </label>
+				<input type = "text" id = "name" name = "name">
+			<label for = "email"> Email Address: </label>
+				<input type = "email" id = "email" name = "email">
+			<label for = "message"> Message: </label>
+				<textarea name = "message" id = "message"></textarea>
+		</div>
+
+		<div id = "submit">
+			<input type = "submit" value = "Submit"/>
+		</div>
+
+	</form>
+</div>
+
+</main>
+
+<footer id="foot">
+	<ul>
+		<li> <a> University of Michigan </a> </li>
+		<li> <a> Travel Enthusiast </a> </li>
+	</ul>
+</footer>
+</body>
+</html>
