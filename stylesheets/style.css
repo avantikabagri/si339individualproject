@@ -8,7 +8,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 300px;
+	min-height: 400px;
 	min-width: auto;
 	display: grid;
 	grid-template-rows: 75px auto 100px;
@@ -102,7 +102,7 @@ nav .current{
 #aboutme{
 	display: grid;
 	grid-template-rows: 10px auto auto auto 10px;
-	grid-template-columns: 350px auto 350px;
+	grid-template-columns: 400px auto 400px;
 	justify-content: center;
 }
 
@@ -114,8 +114,10 @@ nav .current{
 #aboutme h1{
 	grid-row: 2;
 	grid-column: 2;
-	font-size: 20px;
+	font-size: 14px;
 	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #aboutme p{
@@ -175,7 +177,8 @@ nav .current{
 #photos img{
 	width: 100%;
 	height: auto;
-	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
 	filter: grayscale();
 		opacity: 50%;
 }
@@ -200,11 +203,11 @@ nav .current{
 }
 
 #quote p{
-	font-size: 14px;
+	font-size: 10px;
 	text-align:	center;
 	grid-row: 2;
 	grid-column: 1;
-	line-height: 4.5;
+	line-height: 2;
 	margin-top: 25px;
 	border: 2px solid purple;
 	background-color: rgb(255, 214, 227);
@@ -213,7 +216,7 @@ nav .current{
 #quote img{
 	grid-row: 2;
 	grid-column: 3;
-	height: 500px;
+	height: 300px;
 	width: auto;
 	border: 2px solid purple;
 }
@@ -289,5 +292,96 @@ nav .current{
 @media screen and (prefers-reduced-motion: reduce){
 	header h1{
 		animation: none;
+	}
+}
+
+@media all and (min-width:720px){
+	nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background-color: pink;
+	}
+	nav li{
+		display: block;
+	}
+
+	#photos{
+		display: grid;
+		grid-template-rows: auto auto auto 100px;
+		grid-template-columns: auto auto auto auto;
+	}
+
+	#quote{
+		display: grid;
+		grid-template-rows: 10px auto  10px;
+		grid-template-columns: auto 10px auto;
+	}
+
+	#quote p{
+		font-size: 10px;
+		text-align:	center;
+		grid-row: 2;
+		grid-column: 3;
+		line-height: 2;
+		margin-top: 25px;
+		border: 2px solid purple;
+		background-color: rgb(255, 214, 227);
+	}
+
+	#quote img{
+		grid-row: 2;
+		grid-column: 1;
+		height: 300px;
+		width: auto;
+		border: 2px solid purple;
+	}
+}
+
+@media all and (min-width:1024px){
+	nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		background-color: pink;
+	}
+
+	nav li{
+		display: inline;
+	}
+
+	#photos{
+		display: grid;
+		grid-template-rows: auto auto auto auto auto 100px;
+		grid-template-columns: auto auto;
+	}
+
+	#quote{
+		display: grid;
+		grid-template-rows: 10px auto auto  10px;
+		grid-template-columns: 10px auto 10px;
+	}
+
+	#quote p{
+		font-size: 10px;
+		text-align:	center;
+		grid-row: 3;
+		grid-column: 2;
+		line-height: 2;
+		margin-top: 25px;
+		border: 2px solid purple;
+		background-color: rgb(255, 214, 227);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#quote img{
+		grid-row: 2;
+		grid-column: 2;
+		height: 300px;
+		width: auto;
+		border: 2px solid purple;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
